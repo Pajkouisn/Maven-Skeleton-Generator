@@ -39,6 +39,7 @@ sed -i -e "s/{sample_name}/$project_name/g" ./$folder_name/pom.xml
 #	Enter a description
 read -p "Enter a project description: " description
 sed -i -e "s/{sample_description}/$description/g" ./$folder_name/pom.xml
+sed -i -e "s/{project_name}/$project_name/g" ./$folder_name/readme.md
 echo $description >> ./$folder_name/readme.md
 
 #	Create a new package name similar to the group ID sor src/ main.
